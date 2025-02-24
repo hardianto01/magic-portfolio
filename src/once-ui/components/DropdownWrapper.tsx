@@ -4,11 +4,11 @@ import type React from "react";
 import {
   useState,
   useRef,
-  useEffect,type 
-  ReactNode,
+  useEffect,
+  type ReactNode,
   forwardRef,
   useImperativeHandle,
-} from "react"
+} from "react";
 import {
   useFloating,
   shift,

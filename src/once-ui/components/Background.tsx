@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { type CSSProperties, forwardRef, useEffect, useRef, useState } from "react"
+import { type CSSProperties, forwardRef, useEffect, useRef, useState } from "react";
 import type { SpacingToken } from "../types";
 import { Flex } from "./Flex";
 import type { DisplayProps } from "../interfaces";

@@ -64,7 +64,9 @@ export function generateMetadata({ params: { slug } }: WorkParams) {
 }
 
 export default function Project({ params }: WorkParams) {
-  const post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === params.slug);
+  const post = getPosts(["src", "app", "work", "projects"]).find(
+    (post) => post.slug === params.slug,
+  );
 
   if (!post) {
     notFound();

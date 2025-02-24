@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the
-      intersection of creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the intersection of
+      creativity and engineering.
     </>
   ),
 };
@@ -51,8 +51,8 @@ const home = {
   subline: (
     <>
       I'm Hardianto, a Cloud Computing Enthusiast. Student at{" "}
-      <InlineCode>University of Dipa Makassar</InlineCode>, where I craft
-      creative idea, inovative Solution, dedicated student
+      <InlineCode>University of Dipa Makassar</InlineCode>, where I craft creative idea, inovative
+      Solution, dedicated student
       <br /> . After hours, I build my own projects.
     </>
   ),
@@ -78,17 +78,15 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am a dedicated student at Universitas Dipa Makassar with a strong
-        foundation in IT, beginning my journey in high school with a focus on
-        chatbot development to execute specific and technical commands. This
-        early passion evolved into a career path in software engineering, where
-        I gained a deep understanding of the complexities involved in creating
-        innovative products and applications through collaborative and iterative
-        processes. Currently, I am honing my expertise in application
-        development, with a particular interest in cloud computing, which has
-        further fueled my enthusiasm for leveraging advanced technologies to
-        drive impactful solutions. I am committed to continuous growth and
-        embracing new challenges in the dynamic IT landscape.
+        I am a dedicated student at Universitas Dipa Makassar with a strong foundation in IT,
+        beginning my journey in high school with a focus on chatbot development to execute specific
+        and technical commands. This early passion evolved into a career path in software
+        engineering, where I gained a deep understanding of the complexities involved in creating
+        innovative products and applications through collaborative and iterative processes.
+        Currently, I am honing my expertise in application development, with a particular interest
+        in cloud computing, which has further fueled my enthusiasm for leveraging advanced
+        technologies to drive impactful solutions. I am committed to continuous growth and embracing
+        new challenges in the dynamic IT landscape.
       </>
     ),
   },
@@ -102,8 +100,8 @@ const about = {
         role: "Student",
         achievements: [
           <>
-            I began my journey into the realm of software development, immersing
-            myself in the intricacies of the Node.js ecosystem.
+            I began my journey into the realm of software development, immersing myself in the
+            intricacies of the Node.js ecosystem.
           </>,
         ],
         images: [],
@@ -114,10 +112,9 @@ const about = {
         role: "Student",
         achievements: [
           <>
-            Delving into the world of automated communication, I independently
-            developed cutting-edge WhatsApp bots utilizing powerful libraries
-            such as <InlineCode>Baileys</InlineCode> and{" "}
-            <InlineCode>Open-Wa</InlineCode>.
+            Delving into the world of automated communication, I independently developed
+            cutting-edge WhatsApp bots utilizing powerful libraries such as{" "}
+            <InlineCode>Baileys</InlineCode> and <InlineCode>Open-Wa</InlineCode>.
           </>,
         ],
         images: [],
@@ -128,10 +125,9 @@ const about = {
         role: "Freelance",
         achievements: [
           <>
-            I delved deep into the intricacies of RESTful API development,
-            meticulously crafting robust APIs using the Express.js framework,
-            implementing CRUD operations, and ensuring stringent security
-            measures.
+            I delved deep into the intricacies of RESTful API development, meticulously crafting
+            robust APIs using the Express.js framework, implementing CRUD operations, and ensuring
+            stringent security measures.
           </>,
         ],
         images: [],
@@ -142,8 +138,8 @@ const about = {
         role: "Student",
         achievements: [
           <>
-            I embarked on a journey into the world of C++, honing my skills in
-            fundamental concepts and algorithmic problem-solving.
+            I embarked on a journey into the world of C++, honing my skills in fundamental concepts
+            and algorithmic problem-solving.
           </>,
         ],
         images: [],
@@ -154,10 +150,9 @@ const about = {
         timeframe: "February 2023",
         achievements: [
           <>
-            I delved into Python, mastering its data manipulation capabilities,
-            crafting APIs with FastAPI, exploring the realms of machine learning
-            and data science, and harnessing the power of Sage Maker for
-            advanced analytics.
+            I delved into Python, mastering its data manipulation capabilities, crafting APIs with
+            FastAPI, exploring the realms of machine learning and data science, and harnessing the
+            power of Sage Maker for advanced analytics.
           </>,
         ],
         images: [],
@@ -168,9 +163,8 @@ const about = {
         role: "Student",
         achievements: [
           <>
-            Recognizing the need for efficiency and speed, I ventured into
-            Golang, leveraging its capabilities to optimize WhatsApp bot
-            performance.
+            Recognizing the need for efficiency and speed, I ventured into Golang, leveraging its
+            capabilities to optimize WhatsApp bot performance.
           </>,
         ],
         images: [],
@@ -181,8 +175,8 @@ const about = {
         role: "Student",
         achievements: [
           <>
-            I delved into Java, mastering its concepts and developing basic UI
-            programs using NetBeans IDE.
+            I delved into Java, mastering its concepts and developing basic UI programs using
+            NetBeans IDE.
           </>,
         ],
         images: [],
@@ -199,9 +193,7 @@ const about = {
       },
       {
         name: "Bangkit 2024 Batch 2",
-        description: (
-          <>Cohort at Bangkit 2024 batch 2. Cloud Computing learning path</>
-        ),
+        description: <>Cohort at Bangkit 2024 batch 2. Cloud Computing learning path</>,
       },
     ],
   },
@@ -213,8 +205,8 @@ const about = {
         title: "Cloud Computing Engineer",
         description: (
           <>
-            Make architecture system for cloud, secured, Building realbilty,
-            auto scaling, and stable system in Google cloud console
+            Make architecture system for cloud, secured, Building realbilty, auto scaling, and
+            stable system in Google cloud console
           </>
         ),
         // optional: leave the array empty if you don't want to display images
@@ -251,9 +243,8 @@ const about = {
         title: "Bot Discord, Whatsapp & Telegram",
         description: (
           <>
-            Building Framework Bot, to handle communication and specific
-            commands with serveral languange like{" "}
-            <InlineCode>javascript/typescript</InlineCode>,{" "}
+            Building Framework Bot, to handle communication and specific commands with serveral
+            languange like <InlineCode>javascript/typescript</InlineCode>,{" "}
             <InlineCode>golang</InlineCode> and <InlineCode>python.</InlineCode>
           </>
         ),
@@ -271,8 +262,8 @@ const about = {
         title: "DevOps",
         description: (
           <>
-            developed website, application with self hosting (like on premise)
-            or without any hosting
+            developed website, application with self hosting (like on premise) or without any
+            hosting
           </>
         ),
         // optional: leave the array empty if you don't want to display images

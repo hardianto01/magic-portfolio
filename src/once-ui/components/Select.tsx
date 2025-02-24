@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { useState, useRef, useEffect, forwardRef, type ReactNode } from "react"
+import { useState, useRef, useEffect, forwardRef, type ReactNode } from "react";
 import classNames from "classnames";
 import { DropdownWrapper, Flex, Icon, IconButton, Input, type InputProps, Option } from ".";
 import inputStyles from "./Input.module.scss";

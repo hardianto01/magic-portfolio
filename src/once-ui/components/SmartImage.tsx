@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { type CSSProperties, useState, useRef, useEffect } from "react"
+import { type CSSProperties, useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
 import { Flex, Skeleton } from "@/once-ui/components";
