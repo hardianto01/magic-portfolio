@@ -1,13 +1,14 @@
 "use client";
 
-import React, {
+import type React from "react";
+import {
   useState,
   useRef,
-  useEffect,
+  useEffect,type 
   ReactNode,
   forwardRef,
   useImperativeHandle,
-} from "react";
+} from "react"
 import {
   useFloating,
   shift,
@@ -15,7 +16,7 @@ import {
   flip,
   size,
   autoUpdate,
-  Placement,
+  type Placement,
 } from "@floating-ui/react-dom";
 import { Flex, Dropdown } from ".";
 import styles from "./DropdownWrapper.module.scss";

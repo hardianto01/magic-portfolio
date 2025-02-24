@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, ReactNode } from "react";
+import React, { useState, useEffect, useRef, type ReactNode } from "react";
 
 import "./CodeHighlight.css";
 import styles from "./CodeBlock.module.scss";

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { forwardRef, useState, useEffect } from "react";
+import type React from "react";
+import { forwardRef, useState, useEffect } from "react";
 import classNames from "classnames";
 import { Grid } from "./Grid";
 import { Logo } from "./Logo";

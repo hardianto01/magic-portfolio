@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState, forwardRef } from "react";
+import type React from "react";
+import { useEffect, useState, forwardRef } from "react";
 import styles from "./GlitchFx.module.scss";
 import { Flex } from "./Flex";
 import classNames from "classnames";

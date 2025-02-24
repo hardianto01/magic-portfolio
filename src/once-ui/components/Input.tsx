@@ -1,13 +1,14 @@
 "use client";
 
-import React, {
+import type React from "react";
+import {
   useState,
   useEffect,
-  forwardRef,
+  forwardRef,type 
   InputHTMLAttributes,
-  useCallback,
+  useCallback,type 
   ReactNode,
-} from "react";
+} from "react"
 import classNames from "classnames";
 import { Flex, Text } from ".";
 import styles from "./Input.module.scss";

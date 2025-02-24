@@ -1,7 +1,7 @@
 "use client";
 
 import React, {
-  ReactNode,
+  type ReactNode,
   useEffect,
   useCallback,
   useRef,

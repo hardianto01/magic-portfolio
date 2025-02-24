@@ -1,8 +1,9 @@
 "use client";
 
-import React, { ReactNode, MouseEventHandler, forwardRef } from "react";
+import type React from "react";
+import { type ReactNode, type MouseEventHandler, forwardRef } from "react"
 import classNames from "classnames";
-import { Text, Icon, IconButton, IconButtonProps, Flex } from ".";
+import { Text, Icon, IconButton, type IconButtonProps, Flex } from ".";
 import styles from "./Chip.module.scss";
 
 interface ChipProps extends React.ComponentProps<typeof Flex> {

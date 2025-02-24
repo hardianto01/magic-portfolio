@@ -1,9 +1,10 @@
 "use client";
 
-import React, { forwardRef } from "react";
+import type React from "react";
+import { forwardRef } from "react";
 import classNames from "classnames";
 
-import { Flex, Text, Skeleton, Tag, TagProps, Avatar, AvatarProps } from ".";
+import { Flex, Text, Skeleton, Tag, type TagProps, Avatar, type AvatarProps } from ".";
 
 interface UserProps {
   name?: string;

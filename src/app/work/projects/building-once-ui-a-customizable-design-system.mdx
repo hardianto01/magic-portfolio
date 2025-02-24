@@ -1,45 +1,139 @@
 ---
-title: "Building Once UI, a Customizable Design System"
+title: "Cloud Infrastructure for ML API at TrueColor"
 publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+summary: "Developing and managing cloud infrastructure for TrueColor's machine learning API using Google Cloud Run, Cloud Storage, and Cloudflare, built with Python and FastAPI."
 images:
   - "/images/projects/project-01/cover-01.jpg"
   - "/images/projects/project-01/cover-02.jpg"
   - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
 team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
-    role: "Product Manager"
-    avatar: "/images/projects/project-01/avatar-01.png"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - name: "Hardianto"
+    role: "Fullstack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/hardianto/"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+As a Fullstack Developer at TrueColor, I developed and maintained the cloud infrastructure for our machine learning API service. The system was built using Google Cloud Platform services, particularly Cloud Run for containerized applications, integrated with Cloudflare for DNS management and security.
 
-## Key Features
+## Technical Architecture
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+### Cloud Infrastructure Components
+- **Google Cloud Run**
+  - Containerized FastAPI application deployment
+  - Automatic scaling based on traffic
+  - Pay-per-use pricing model
+  - Zero server management overhead
+
+- **Google Cloud Storage**
+  - Secure storage for ML models
+  - Image and data storage
+  - Backup management
+  - Version control for ML models
+
+- **Security Implementation**
+  - Cloud Firewall rules configuration
+  - SSL/TLS encryption
+  - API authentication system
+  - Rate limiting implementation
+
+- **Cloudflare Integration**
+  - DNS management
+  - DDoS protection
+  - CDN configuration
+  - SSL certificate management
+
+## API Development
+
+### FastAPI Implementation
+- Built RESTful API endpoints for ML model interaction
+- Implemented async operations for improved performance
+- Created comprehensive API documentation using Swagger
+- Developed request validation and error handling
+
+### Machine Learning Integration
+- Created endpoints for ML model inference
+- Implemented model version management
+- Built caching system for frequent predictions
+- Optimized API response times for ML operations
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Backend Framework**:
+  - Python 3.9+
+  - FastAPI
+  - Pydantic for data validation
+  - Uvicorn ASGI server
 
-## Challenges and Learnings
+- **Cloud Services**:
+  - Google Cloud Run
+  - Google Cloud Storage
+  - Google Cloud Firewall
+  - Cloudflare DNS
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+- **Development Tools**:
+  - Docker
+  - Git
+  - GitHub Actions for CI/CD
+  - Postman for API testing
 
-## Outcome
+## Performance Optimizations
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+- Implemented caching strategies for frequent requests
+- Optimized container configurations
+- Set up auto-scaling policies
+- Configured Cloudflare caching rules
+
+## Security Measures
+
+- Implemented API key authentication
+- Set up firewall rules
+- Configured CORS policies
+- Implemented rate limiting
+- Set up security headers
+
+## Monitoring and Logging
+
+- Set up Cloud Monitoring
+- Implemented structured logging
+- Created alert policies
+- Built performance dashboards
+
+## Key Achievements
+
+- Achieved 99.9% uptime for API services
+- Reduced API response time to under 100ms
+- Successfully handled peak loads of 1000+ requests/minute
+- Maintained secure and efficient ML model deployment
+- Optimized cloud costs while maintaining performance
+
+## Challenges and Solutions
+
+1. **Performance Optimization**:
+   - Implemented efficient caching strategies
+   - Optimized Docker container configurations
+   - Fine-tuned Cloud Run instances
+
+2. **Security Implementation**:
+   - Set up comprehensive firewall rules
+   - Implemented robust authentication system
+   - Configured Cloudflare security features
+
+3. **Cost Management**:
+   - Optimized Cloud Run instance usage
+   - Implemented efficient storage strategies
+   - Set up cost monitoring and alerts
+
+## Impact
+
+The infrastructure successfully supported TrueColor's machine learning operations, providing reliable and secure API services for cross-platform ML model inference while maintaining optimal performance and cost efficiency.
+
+## Learning Outcomes
+
+- Expertise in Google Cloud Platform services
+- Advanced knowledge of FastAPI and Python
+- Experience with ML model deployment
+- Skills in cloud security implementation
+- Understanding of cost optimization in cloud environments
+---

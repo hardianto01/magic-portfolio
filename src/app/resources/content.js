@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Hardi",
+  lastName: "Anto",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack Developer",
+  avatar: "/images/avatar.jpeg",
+  location: "Asia/Makassar", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Bahasa Indonesia", "Jawa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -29,22 +29,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/hardianto01",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://id.linkedin.com/in/hardianto01",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:hardiantojek92@gmail.com",
   },
 ];
 
@@ -52,11 +47,13 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full Stack Developer and Cloud Computing Enthusiast</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Hardianto, a Cloud Computing Enthusiast. Student at{" "}
+      <InlineCode>University of Dipa Makassar</InlineCode>, where I craft
+      creative idea, inovative Solution, dedicated student
+      <br /> . After hours, I build my own projects.
     </>
   ),
 };
@@ -81,52 +78,111 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a dedicated student at Universitas Dipa Makassar with a strong
+        foundation in IT, beginning my journey in high school with a focus on
+        chatbot development to execute specific and technical commands. This
+        early passion evolved into a career path in software engineering, where
+        I gained a deep understanding of the complexities involved in creating
+        innovative products and applications through collaborative and iterative
+        processes. Currently, I am honing my expertise in application
+        development, with a particular interest in cloud computing, which has
+        further fueled my enthusiasm for leveraging advanced technologies to
+        drive impactful solutions. I am committed to continuous growth and
+        embracing new challenges in the dynamic IT landscape.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Journey",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Embarking on My Career Journey",
+        timeframe: "December 2020",
+        role: "Student",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            I began my journey into the realm of software development, immersing
+            myself in the intricacies of the Node.js ecosystem.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Pioneering WhatsApp Bot Development",
+        timeframe: "January 2021",
+        role: "Student",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Delving into the world of automated communication, I independently
+            developed cutting-edge WhatsApp bots utilizing powerful libraries
+            such as <InlineCode>Baileys</InlineCode> and{" "}
+            <InlineCode>Open-Wa</InlineCode>.
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Mastering the Art of RESTful APIs",
+        timeframe: "June 2021",
+        role: "Freelance",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            I delved deep into the intricacies of RESTful API development,
+            meticulously crafting robust APIs using the Express.js framework,
+            implementing CRUD operations, and ensuring stringent security
+            measures.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Exploring the Depths of C++",
+        timeframe: "November 2022",
+        role: "Student",
+        achievements: [
+          <>
+            I embarked on a journey into the world of C++, honing my skills in
+            fundamental concepts and algorithmic problem-solving.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Harnessing the Power of Python Data Structures",
+        role: "Student",
+        timeframe: "February 2023",
+        achievements: [
+          <>
+            I delved into Python, mastering its data manipulation capabilities,
+            crafting APIs with FastAPI, exploring the realms of machine learning
+            and data science, and harnessing the power of Sage Maker for
+            advanced analytics.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Exploring the Efficiency of Golang",
+        timeframe: "July 2023",
+        role: "Student",
+        achievements: [
+          <>
+            Recognizing the need for efficiency and speed, I ventured into
+            Golang, leveraging its capabilities to optimize WhatsApp bot
+            performance.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Delving into Java's Versatility",
+        timeframe: "November 2023",
+        role: "Student",
+        achievements: [
+          <>
+            I delved into Java, mastering its concepts and developing basic UI
+            programs using NetBeans IDE.
           </>,
         ],
         images: [],
@@ -138,12 +194,14 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "University of Dipa Makassar",
         description: <>Studied software engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Bangkit 2024 Batch 2",
+        description: (
+          <>Cohort at Bangkit 2024 batch 2. Cloud Computing learning path</>
+        ),
       },
     ],
   },
@@ -152,8 +210,13 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Cloud Computing Engineer",
+        description: (
+          <>
+            Make architecture system for cloud, secured, Building realbilty,
+            auto scaling, and stable system in Google cloud console
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -171,8 +234,47 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Laravel",
+        description: <>Building next gen apps with Laravel</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+
+      {
+        title: "Bot Discord, Whatsapp & Telegram",
+        description: (
+          <>
+            Building Framework Bot, to handle communication and specific
+            commands with serveral languange like{" "}
+            <InlineCode>javascript/typescript</InlineCode>,{" "}
+            <InlineCode>golang</InlineCode> and <InlineCode>python.</InlineCode>
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "DevOps",
+        description: (
+          <>
+            developed website, application with self hosting (like on premise)
+            or without any hosting
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -223,61 +325,6 @@ const gallery = {
       src: "/images/gallery/img-03.jpg",
       alt: "image",
       orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
     },
   ],
 };

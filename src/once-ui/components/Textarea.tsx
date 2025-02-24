@@ -4,9 +4,9 @@ import React, {
   useState,
   useEffect,
   forwardRef,
-  TextareaHTMLAttributes,
+  type TextareaHTMLAttributes,
   useCallback,
-  ReactNode,
+  type ReactNode,
 } from "react";
 import classNames from "classnames";
 import { Flex, Text } from ".";

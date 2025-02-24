@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useEffect, forwardRef } from "react";
-import { SpacingToken } from "../types";
+import type React from "react";
+import { useState, useEffect, forwardRef } from "react";
+import type { SpacingToken } from "../types";
 import styles from "./RevealFx.module.scss";
 import { Flex } from ".";
 

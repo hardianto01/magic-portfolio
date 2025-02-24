@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
+import type React from "react";
+import { useRef } from "react";
 import styles from "./TiltFx.module.scss";
 import { Flex } from ".";
 

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, forwardRef, useEffect } from "react";
+import type React from "react";
+import { useState, forwardRef, useEffect } from "react";
 import classNames from "classnames";
 import { Flex, Text, Button, Grid, SegmentedControl, IconButton, RevealFx, NumberInput } from ".";
 import styles from "./DatePicker.module.scss";

@@ -1,12 +1,13 @@
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
-import React, { ReactNode } from "react";
+import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
+import type React from "react";
+import type { ReactNode } from "react";
 
 import { SmartImage, SmartLink, Text } from "@/once-ui/components";
 import { CodeBlock } from "@/once-ui/modules";
 import { HeadingLink } from "@/components";
 
-import { TextProps } from "@/once-ui/interfaces";
-import { SmartImageProps } from "@/once-ui/components/SmartImage";
+import type { TextProps } from "@/once-ui/interfaces";
+import type { SmartImageProps } from "@/once-ui/components/SmartImage";
 
 type TableProps = {
   data: {
