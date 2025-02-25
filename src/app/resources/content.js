@@ -9,12 +9,12 @@ const person = {
   role: "Full Stack Developer",
   avatar: "/images/avatar.jpeg",
   location: "Asia/Makassar", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa Indonesia", "Jawa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Bahasa Indonesia"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the intersection of
@@ -50,7 +50,7 @@ const home = {
   headline: <>Full Stack Developer and Cloud Computing Enthusiast</>,
   subline: (
     <>
-      I'm Hardianto, a Cloud Computing Enthusiast. Student at{" "}
+      Im&apos; Hardianto, a Cloud Computing Enthusiast. Student at{" "}
       <InlineCode>University of Dipa Makassar</InlineCode>, where I craft creative idea, inovative
       Solution, dedicated student
       <br /> . After hours, I build my own projects.

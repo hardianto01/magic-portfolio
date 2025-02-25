@@ -34,8 +34,25 @@ const Icon = forwardRef<HTMLDivElement, IconProps>(
     },
     ref,
   ) => {
+    // Pindahkan semua hooks ke bagian atas
+    const [isTooltipVisible, setTooltipVisible] = useState(false);
+    const [isHover, setIsHover] = useState(false);
     const IconComponent: IconType | undefined = iconLibrary[name];
 
+    useEffect(() => {
+      let timer: NodeJS.Timeout;
+      if (isHover) {
+        timer = setTimeout(() => {
+          setTooltipVisible(true);
+        }, 400);
+      } else {
+        setTooltipVisible(false);
+      }
+
+      return () => clearTimeout(timer);
+    }, [isHover]);
+
+    // Pindahkan conditional returns setelah semua hooks
     if (!IconComponent) {
       console.warn(`Icon "${name}" does not exist in the library.`);
       return null;
@@ -56,22 +73,6 @@ const Icon = forwardRef<HTMLDivElement, IconProps>(
       const [scheme, weight] = onSolid.split("-") as [ColorScheme, ColorWeight];
       colorClass = `${scheme}-on-solid-${weight}`;
     }
-
-    const [isTooltipVisible, setTooltipVisible] = useState(false);
-    const [isHover, setIsHover] = useState(false);
-
-    useEffect(() => {
-      let timer: NodeJS.Timeout;
-      if (isHover) {
-        timer = setTimeout(() => {
-          setTooltipVisible(true);
-        }, 400);
-      } else {
-        setTooltipVisible(false);
-      }
-
-      return () => clearTimeout(timer);
-    }, [isHover]);
 
     return (
       <Flex
