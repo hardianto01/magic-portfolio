@@ -15,6 +15,23 @@ import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
 
+interface WorkImage {
+  width: number;
+  height: number;
+  src: string;
+  alt: string;
+}
+
+// Tambahkan interface untuk experience
+interface WorkExperience {
+  company: string;
+  role: string;
+  timeframe: string;
+  achievements: JSX.Element[];
+  images: WorkImage[];
+}
+
+
 export async function generateMetadata() {
   const title = about.title;
   const description = about.description;
@@ -204,33 +221,11 @@ export default function About() {
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.work.experiences.map((experience, index) => (
+                {about.work.experiences.map((experience: WorkExperience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
-                        {experience.timeframe}
-                      </Text>
-                    </Flex>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
-                      {experience.role}
-                    </Text>
-                    <Column as="ul" gap="16">
-                      {experience.achievements.map((achievement: JSX.Element, index: number) => (
-                        <Text
-                          as="li"
-                          variant="body-default-m"
-                          key={`${experience.company}-${index}`}
-                        >
-                          {achievement}
-                        </Text>
-                      ))}
-                    </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {experience.images.map((image: WorkImage, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
